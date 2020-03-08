@@ -44,7 +44,7 @@ public class Bod2D implements Bod
     }
 
     @Override
-    public void setXY(float... suradnice)
+    public void setXY(float ... suradnice)
     {
         this.x=suradnice[0];
         this.y=suradnice[1];
@@ -53,7 +53,7 @@ public class Bod2D implements Bod
     @Override
     public float getDistance(Bod other)
     {
-        return (float )Math.sqrt(Math.pow(this.x-other.getX(),2)+Math.pow(this.y-other.getY(),2));
+        return (float)Math.sqrt(Math.pow(this.x-other.getX(),2)+Math.pow(this.y-other.getY(),2));
     }
 
     @Override
